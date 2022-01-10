@@ -20,7 +20,7 @@ label-close-padding = 3
 menu-0-0 = 
 menu-0-0-foreground = ${colors.urgent}
 menu-0-0-padding = 2
-menu-0-0-exec = shutdown
+menu-0-0-exec = shutdown now
 menu-0-1 = 
 menu-0-1-foreground = ${colors.warning}
 menu-0-1-padding = 2
@@ -28,7 +28,7 @@ menu-0-1-exec = reboot
 menu-0-2 = 
 menu-0-2-foreground = ${colors.notify}
 menu-0-2-padding = 2
-menu-0-2-exec = i3-msg exit
+menu-0-2-exec = i3-msg exit # logout from i3wm
 
 
 
