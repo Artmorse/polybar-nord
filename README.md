@@ -33,7 +33,7 @@
 
 Copy the [src folder](src) into your [~/.config/polybar folder](~/.config/polybar).
 
-You can change the [global-config](global-config) to match the polybars with your system.
+You can change the [global-config](global-config) to match the polybars with your system ([follow this guide](./modules-configuration.md)).
 
 Use the [launch.sh script](launch.sh) to start your polybars.
 
