@@ -56,6 +56,13 @@ tray-position = ${config.systray-top}
 
 
 
+[bar/nord-top-2]
+inherit = bar/base
+
+modules-left = ${config.top-left}
+
+
+
 [bar/nord-down]
 inherit = bar/base
 

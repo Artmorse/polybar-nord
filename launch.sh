@@ -21,6 +21,8 @@ if type "xrandr"; then
 		echo "The top bar has been launched on the second monitor."
 		MONITOR=$monitor_1 polybar -c $HOME/.config/polybar/bars-config nord-down &
 		echo "The down bar has been launched on the primary monitor."
+		MONITOR=$monitor_1 polybar -c $HOME/.config/polybar/bars-config nord-top-2 &
+		echo "The second top bar has been launched on the primary monitor."
 	else
 		for m in $monitors; do
 			MONITOR=$m polybar -c $HOME/.config/polybar/bars-config nord-top &
