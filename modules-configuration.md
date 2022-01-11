@@ -32,3 +32,20 @@ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
 ```bash
 sensors
 ```
+
+## [module/backlight] | [module/xbacklight]
+
+If the `[module/backlight]` doesn't work, you can update the [`top-right` value] from:
+
+```config
+top-right = network-detail docker backlight alsa battery date
+```
+
+to:
+
+```config
+top-right = network-detail docker xbacklight alsa battery date
+```
+
+and vice versa.
+
