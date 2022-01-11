@@ -25,6 +25,7 @@ systray-bottom = none
 # MODULES
 #
 
+# Top modules
 top-left = rofi i3
 top-center = title
 top-right = network-detail docker backlight alsa battery date
@@ -67,7 +68,7 @@ master-mixer = Master
 # if some of them doesn't suit your environment, you can change
 # it from here.
 # network interface, check by `ip link show`
-interface = wlo1
+interface = wlp0s20f3
 
 
 # [module/temperature] options
@@ -76,4 +77,4 @@ interface = wlo1
 # $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
 # $ sensors
 # Default: 0
-thermal-zone = 6
+thermal-zone = 4

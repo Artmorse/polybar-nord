@@ -2,7 +2,7 @@
 
 ## [module/battery]
 
-Update the [`battery-bat`, `battery-adp` values](global-config) with yours.
+Update the [`battery-bat`, `battery-adp` values](config) with yours.
 
 ```bash
 upower --enumerate
@@ -11,7 +11,7 @@ upower -i /org/freedesktop/UPower/devices/line_power_AC
 
 ## [module/network]
 
-Update the [`interface` value](global-config) with yours.
+Update the [`interface` value](config) with yours.
 
 ```bash
 ip link show
@@ -23,7 +23,7 @@ ip a
 
 ## [module/temperature]
 
-Update the [`thermal-zone` value](global-config) with yours.
+Update the [`thermal-zone` value](config) with yours.
 
 ```bash
 for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
