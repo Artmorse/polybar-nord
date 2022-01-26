@@ -197,7 +197,7 @@ base-temperature = 20
 
 ; Threshold temperature to display warning label (in degrees celsius)
 ; Default: 80
-warn-temperature = 60
+warn-temperature = 70
 
 ; Whether or not to show units next to the temperature tokens (°C, °F)
 ; Default: true
@@ -226,7 +226,6 @@ label = %temperature-c%
 label-warn = %temperature-c% 
 label-warn-padding = 1
 label-warn-foreground = ${colors.urgent}
-label-warn-background = ${colors.nord9}
 
 ; Requires the <ramp> tag
 ; The icon selection will range from `base-temperature` to `warn-temperature`,
@@ -236,14 +235,11 @@ label-warn-background = ${colors.nord9}
 ramp-0 = 
 ramp-0-foreground = ${colors.nord9}
 ramp-1 = 
-ramp-1-foreground = ${colors.nord9}
+ramp-1-foreground = ${colors.notify}
 ramp-2 = 
-ramp-2-foreground = ${colors.success}
+ramp-2-foreground = ${colors.warning}
 ramp-3 = 
-ramp-3-foreground = ${colors.success}
-ramp-4 = 
-ramp-4-foreground = ${colors.warning}
-
+ramp-3-foreground = ${colors.urgent}
 
 
 
