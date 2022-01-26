@@ -47,7 +47,7 @@ bottom-right = cpu memory temperature show-desktop
 # on different bars
 #
 # Default: false
-i3-pin-workspaces = false
+i3-pin-workspaces = true
 
 
 # [module/battery] options
