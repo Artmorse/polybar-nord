@@ -29,6 +29,12 @@ menu-0-2 = 
 menu-0-2-foreground = ${colors.notify}
 menu-0-2-padding = 2
 menu-0-2-exec = i3-msg exit # logout from i3wm
+menu-0-3 = 
+menu-0-3-foreground = ${colors.success}
+menu-0-3-padding = 2
+menu-0-3-exec = i3lock
+
+
 
 
 
