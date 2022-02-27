@@ -37,6 +37,10 @@ You can change the [config](config) to match the polybars with your system ([fol
 
 Use the [launch.sh script](launch.sh) to start your polybars.
 
+```bash
+bash launch.sh DP-1 eDP-1 HDMI-1
+```
+
 ## File description
 
 - [colors](colors)
