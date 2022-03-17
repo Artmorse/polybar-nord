@@ -2,6 +2,10 @@
 
 ![polybars](polybars.png)
 
+## Requirements
+
+- `polybar` >= 3.6.0
+
 ## Modules
 
 ### Top bar

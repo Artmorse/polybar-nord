@@ -466,6 +466,7 @@ label-muted-foreground = ${colors.urgent}
 label-muted-underline = ${colors.urgent}
 label-muted-padding = 2
 
+
 ; Only applies if <ramp-volume> is used
 ramp-volume-0 = 奄
 ramp-volume-1 = 墳
@@ -477,6 +478,11 @@ ramp-volume-foreground = ${colors.nord9}
 ; If undefined, <ramp-volume> will be used for both
 ; Only applies if <ramp-volume> is used
 ramp-headphones-0 = 
+
+; Right and Middle click
+; New in version 3.6.0
+click-right = pavucontrol
+; click-middle = 
 
 
 
