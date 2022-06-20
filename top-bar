@@ -438,8 +438,8 @@ ramp-headphones-0 = 
 
 ; Right and Middle click
 ; New in version 3.6.0
-click-right = pavucontrol
-; click-middle = 
+; click-right = 
+click-middle = pavucontrol
 
 
 
