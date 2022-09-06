@@ -16,6 +16,7 @@
 - **module/title** | internal/xwindow module | [wiki](https://github.com/polybar/polybar/wiki/Module:-xwindow)
 
 - **module/network-detail** | internal/network module | [wiki](https://github.com/polybar/polybar/wiki/Module:-network)
+- **module/kind** | custom/script module
 - **module/docker** | custom/script module | [github repository](https://github.com/kerwanp/polybar-script-docker)
 - **module/backlight** | internal/backlight module | [wiki](https://github.com/polybar/polybar/wiki/Module:-backlight)
 - **module/alsa** | internal/alsa module | [wiki](https://github.com/polybar/polybar/wiki/Module:-alsa)

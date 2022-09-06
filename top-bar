@@ -294,6 +294,24 @@ label-padding = 1
 
 
 ;
+; [module/kind]
+;
+
+[module/kind]
+type = custom/script
+
+exec = kind get clusters -q | wc -l
+interval = 1
+
+label = %output% ⎈
+label-underline = ${colors.function}
+label-foreground = ${colors.nord6}
+label-padding = 1
+
+
+
+
+;
 ; [module/backlight]
 ; https://github.com/polybar/polybar/wiki/Module:-backlight
 ;
