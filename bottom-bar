@@ -188,7 +188,7 @@ interval = 10
 ; To list all the zone types, run 
 ; $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
 ; Default: 0
-thermal-zone = 6
+thermal-zone = ${config.thermal-zone}
 
 ; Full path of temperature sysfs path
 ; Use `sensors` to find preferred temperature source, then run

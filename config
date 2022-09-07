@@ -77,4 +77,5 @@ interface = wlp0s20f3
 # $ for i in /sys/class/thermal/thermal_zone*; do echo "$i: $(<$i/type)"; done
 # $ sensors
 # Default: 0
-thermal-zone = 4
+thermal-zone = 1
+#              ->   /sys/class/thermal/thermal_zone1: TCPU
