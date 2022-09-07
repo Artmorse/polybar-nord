@@ -28,6 +28,7 @@
 ### Bottom bar
 
 - **module/powermenu** | custom/menu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-menu)
+- **module/updates** | custom/updates module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/updates-pacman-aurhelper)
 
 - **module/cpu** | internal/cpu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-cpu)
 - **module/memory** | internal/memory module | [wiki](https://github.com/polybar/polybar/wiki/Module:-memory)
@@ -63,4 +64,3 @@ bash launch.sh DP-1 eDP-1 HDMI-1
 
 ## Inspiration
 
-- [polybar-nord-theme](https://github.com/Yucklys/polybar-nord-theme)

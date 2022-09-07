@@ -31,7 +31,7 @@ top-center = title
 top-right = network-detail kind docker backlight alsa battery date
 
 # Bottom modules
-bottom-left = powermenu
+bottom-left = powermenu updates
 bottom-center =
 bottom-right = cpu memory filesystem temperature show-desktop
 

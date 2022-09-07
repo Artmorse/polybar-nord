@@ -38,6 +38,28 @@ menu-0-3-exec = slock
 
 
 
+;
+; [module/updates]
+; https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/updates-pacman-aurhelper
+;
+
+[module/updates]
+type = custom/script
+
+exec = ~/.config/polybar/scripts/count-pacman-and-yay-updates.sh
+interval = 600
+
+click-middle = ~/.config/polybar/scripts/upgrade-pacman-and-yay-packages.sh
+
+label =  %output%
+label-underline = ${colors.function}
+label-foreground = ${colors.nord6}
+label-padding = 1
+
+
+
+
+
 
 ;
 ; [module/cpu]
