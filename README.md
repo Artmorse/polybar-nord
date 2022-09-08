@@ -29,6 +29,7 @@
 
 - **module/powermenu** | custom/menu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-menu)
 - **module/updates** | custom/updates module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/updates-pacman-aurhelper)
+- **module/weather** | custom/weather module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-simple)
 
 - **module/cpu** | internal/cpu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-cpu)
 - **module/memory** | internal/memory module | [wiki](https://github.com/polybar/polybar/wiki/Module:-memory)
@@ -47,6 +48,8 @@ Use the [launch.sh script](launch.sh) to start your polybars.
 ```bash
 bash launch.sh DP-1 eDP-1 HDMI-1
 ```
+
+:warning: Don't forget to configure the **OPENWEATHER_API_KEY** variable in the [*get_weather* script](scripts/get_weather.sh).
 
 ## File description
 
