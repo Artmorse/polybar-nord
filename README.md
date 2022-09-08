@@ -33,6 +33,7 @@
 - **module/cpu** | internal/cpu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-cpu)
 - **module/memory** | internal/memory module | [wiki](https://github.com/polybar/polybar/wiki/Module:-memory)
 - **module/temperature** | internal/temperature module | [wiki](https://github.com/polybar/polybar/wiki/Module:-temperature)
+- **module/filesystem** | internal/filesystem module | [wiki](https://github.com/polybar/polybar/wiki/Module:-filesystem)
 - **module/show-desktop** | custom/text module
 
 ## Usage
@@ -64,3 +65,4 @@ bash launch.sh DP-1 eDP-1 HDMI-1
 
 ## Inspiration
 
+- [polybar-nord-theme](https://github.com/Yucklys/polybar-nord-theme)
