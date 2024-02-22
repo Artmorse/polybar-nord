@@ -180,7 +180,7 @@ label-empty = Desktop
 ; https://github.com/polybar/polybar/wiki/Module:-network
 ;
 
-[module/network-detail]
+[module/network-detail-ipv4]
 type = internal/network
 ; Name of the network interface to display. You can get the names of the
 ; interfaces on your machine with `ip link`
@@ -200,7 +200,7 @@ interval = 3.0
 ; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
 ; Minimum output width of upload/download rate
 ; Default: 3
-#udspeed-minwidth = 5
+;udspeed-minwidth = 5
 
 ; Accumulate values from all interfaces
 ; when querying for up/downspeed rate
@@ -216,15 +216,13 @@ unknown-as-up = true
 ; Available tags:
 ;   <label-connected> (default)
 ;   <ramp-signal>
-format-connected = <label-connected>
-;format-connected = <label-connected> %{A1:nm-connection-editor:}%{A}
-format-connected-foreground = ${colors.success}
+;format-connected = <label-connected>
+format-connected = <label-connected> 
 
 ; Available tags:
 ;   <label-disconnected> (default)
-format-disconnected = <label-disconnected>
-;format-disconnected = <label-disconnected> %{A2:nm-connection-editor:}睊%{A}
-;format-disconnected-foreground = ${colors.urgent}
+;format-disconnected = <label-disconnected>
+format-disconnected = <label-disconnected> 睊
 
 ; Available tags:
 ;   <label-connected> (default)
@@ -243,13 +241,20 @@ format-packetloss = <animation-packetloss> <label-connected>
 ;   %linkspeed% [wired]
 
 ; Default: %ifname% %local_ip%
-label-connected = %local_ip%
+label-connected =  %local_ip%
 ;label-connected = %essid% %local_ip%
 label-connected-foreground = ${colors.nord6}
 
 ; Default: (none)
-label-disconnected = c
+label-disconnected = X
 label-disconnected-foreground = ${colors.urgent}
+
+; TODO
+; icon-connected = 
+; icon-connected-foreground = ${colors.success}
+
+; icon-disconnected = 睊
+; icon-disconnected-foreground = ${colors.urgent}
 
 ; Default: (none)
 ;label-packetloss = %essid%

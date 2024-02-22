@@ -15,7 +15,7 @@
 
 - **module/title** | internal/xwindow module | [wiki](https://github.com/polybar/polybar/wiki/Module:-xwindow)
 
-- **module/network-detail** | internal/network module | [wiki](https://github.com/polybar/polybar/wiki/Module:-network)
+- **module/network-detail-ipv4** | internal/network module | [wiki](https://github.com/polybar/polybar/wiki/Module:-network)
 - **module/kind** | custom/script module
 - **module/docker** | custom/script module | [github repository](https://github.com/kerwanp/polybar-script-docker)
 - **module/backlight** | internal/backlight module | [wiki](https://github.com/polybar/polybar/wiki/Module:-backlight)
@@ -31,6 +31,7 @@
 - **module/updates** | custom/updates module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/updates-pacman-aurhelper)
 - **module/weather** | custom/weather module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-simple)
 
+- **module/network-detail-ipv6** | internal/network module | [wiki](https://github.com/polybar/polybar/wiki/Module:-network)
 - **module/cpu** | internal/cpu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-cpu)
 - **module/memory** | internal/memory module | [wiki](https://github.com/polybar/polybar/wiki/Module:-memory)
 - **module/temperature** | internal/temperature module | [wiki](https://github.com/polybar/polybar/wiki/Module:-temperature)
