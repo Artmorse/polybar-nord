@@ -28,12 +28,12 @@ systray-bottom = none
 # Top modules
 top-left = rofi i3
 top-center = title
-top-right = network-detail-ipv4 kind docker backlight alsa battery date
+top-right = network-wifi-detail-ipv4 network-eth-detail-ipv4 kind docker backlight alsa battery date
 
 # Bottom modules
 bottom-left = powermenu updates weather
 bottom-center = 
-bottom-right = network-detail-ipv6 cpu memory filesystem temperature show-desktop
+bottom-right = network-wifi-detail-ipv6 network-eth-detail-ipv6 cpu memory filesystem temperature show-desktop
 
 
 #
@@ -68,7 +68,8 @@ master-mixer = Master
 # if some of them doesn't suit your environment, you can change
 # it from here.
 # network interface, check by `ip link show`
-interface = wlp0s20f3
+wifi-interface = wlp0s20f3
+eth-interface = enx6c1ff720d61e
 
 
 # [module/temperature] options

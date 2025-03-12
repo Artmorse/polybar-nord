@@ -180,12 +180,12 @@ label-empty = Desktop
 ; https://github.com/polybar/polybar/wiki/Module:-network
 ;
 
-[module/network-detail-ipv4]
+[module/network-eth-detail-ipv4]
 type = internal/network
 ; Name of the network interface to display. You can get the names of the
 ; interfaces on your machine with `ip link`
 ; Wireless interfaces often start with `wl` and ethernet interface with `eno` or `eth`
-interface = ${config.interface}
+interface = ${config.eth-interface}
 
 ; Seconds to sleep between updates
 ; Default: 1
@@ -217,12 +217,13 @@ unknown-as-up = true
 ;   <label-connected> (default)
 ;   <ramp-signal>
 ;format-connected = <label-connected>
-format-connected = <label-connected> 
+format-connected = <label-connected> <ramp-signal>
+; format-connected-underline = ${colors.success}
 
 ; Available tags:
 ;   <label-disconnected> (default)
 ;format-disconnected = <label-disconnected>
-format-disconnected = <label-disconnected> 睊
+format-disconnected = <label-disconnected>
 
 ; Available tags:
 ;   <label-connected> (default)
@@ -243,10 +244,10 @@ format-packetloss = <animation-packetloss> <label-connected>
 ; Default: %ifname% %local_ip%
 label-connected =  %local_ip%
 ;label-connected = %essid% %local_ip%
-label-connected-foreground = ${colors.nord6}
+; label-connected-foreground = ${colors.success}
 
 ; Default: (none)
-label-disconnected = X
+label-disconnected = 󰈂
 label-disconnected-foreground = ${colors.urgent}
 
 ; TODO
@@ -261,12 +262,8 @@ label-disconnected-foreground = ${colors.urgent}
 ;label-packetloss-foreground = #eefafafa
 
 ; Only applies if <ramp-signal> is used
-ramp-signal-0 = 😱
-ramp-signal-1 = 😠
-ramp-signal-2 = 😒
-ramp-signal-3 = 😊
-ramp-signal-4 = 😃
-ramp-signal-5 = 😈
+ramp-signal-0 = 󰈀
+ramp-signal-0-foreground = ${colors.success}
 
 ; Only applies if <animation-packetloss> is used
 animation-packetloss-0 = ⚠
@@ -275,6 +272,120 @@ animation-packetloss-1 = 📶
 animation-packetloss-1-foreground = #000000
 ; Framerate in milliseconds
 animation-packetloss-framerate = 500
+
+; Hide the module when it has no output
+tail = true
+
+
+
+
+;
+; [module/network]
+; https://github.com/polybar/polybar/wiki/Module:-network
+;
+
+[module/network-wifi-detail-ipv4]
+type = internal/network
+; Name of the network interface to display. You can get the names of the
+; interfaces on your machine with `ip link`
+; Wireless interfaces often start with `wl` and ethernet interface with `eno` or `eth`
+interface = ${config.wifi-interface}
+
+; Seconds to sleep between updates
+; Default: 1
+interval = 3.0
+
+; Test connectivity every Nth update
+; A value of 0 disables the feature
+; NOTE: Experimental (needs more testing)
+; Default: 0
+;ping-interval = 3
+
+; @deprecated: Define min width using token specifiers (%downspeed:min% and %upspeed:min%)
+; Minimum output width of upload/download rate
+; Default: 3
+;udspeed-minwidth = 5
+
+; Accumulate values from all interfaces
+; when querying for up/downspeed rate
+; Default: false
+accumulate-stats = true
+
+; Consider an `UNKNOWN` interface state as up.
+; Some devices like USB network adapters have 
+; an unknown state, even when they're running
+; Default: false
+unknown-as-up = true
+
+; Available tags:
+;   <label-connected> (default)
+;   <ramp-signal>
+;format-connected = <label-connected>
+format-connected = <label-connected> <ramp-signal>
+; format-connected-underline = ${colors.function}
+
+; Available tags:
+;   <label-disconnected> (default)
+;format-disconnected = <label-disconnected>
+format-disconnected = <label-disconnected>
+
+; Available tags:
+;   <label-connected> (default)
+;   <label-packetloss>
+;   <animation-packetloss>
+format-packetloss = <animation-packetloss> <label-connected>
+
+; All labels support the following tokens:
+;   %ifname%    [wireless+wired]
+;   %local_ip%  [wireless+wired]
+;   %local_ip6% [wireless+wired]
+;   %essid%     [wireless]
+;   %signal%    [wireless]
+;   %upspeed%   [wireless+wired]
+;   %downspeed% [wireless+wired]
+;   %linkspeed% [wired]
+
+; Default: %ifname% %local_ip%
+label-connected =  %local_ip%
+;label-connected = %essid% %local_ip%
+
+; Default: (none)
+label-disconnected = 󰤭
+label-disconnected-foreground = ${colors.urgent}
+
+; TODO
+; icon-connected = 
+; icon-connected-foreground = ${colors.success}
+
+; icon-disconnected = 睊
+; icon-disconnected-foreground = ${colors.urgent}
+
+; Default: (none)
+;label-packetloss = %essid%
+;label-packetloss-foreground = #eefafafa
+
+; Only applies if <ramp-signal> is used
+ramp-signal-0 = 󰤨
+ramp-signal-0-foreground = ${colors.success}
+ramp-signal-1 = 󰤥
+ramp-signal-1-foreground = ${colors.success}
+ramp-signal-2 = 󰤢
+ramp-signal-2-foreground = ${colors.notify}
+ramp-signal-3 = 󰤟
+ramp-signal-3-foreground = ${colors.warning}
+ramp-signal-4 = 󰤯
+ramp-signal-4-foreground = ${colors.urgent}
+
+; Only applies if <animation-packetloss> is used
+animation-packetloss-0 = ⚠
+animation-packetloss-0-foreground = #ffa64c
+animation-packetloss-1 = 📶
+animation-packetloss-1-foreground = #000000
+; Framerate in milliseconds
+animation-packetloss-framerate = 500
+
+; Hide the module when it has no output
+tail = true
 
 
 
