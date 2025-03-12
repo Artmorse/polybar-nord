@@ -113,7 +113,7 @@ label-focused-padding = 2
 ;   %output%
 ; Default: %icon% %name%
 label-unfocused = %icon%
-label-unfocused-foreground = ${colors.nord9}
+label-unfocused-foreground = ${colors.nord7}
 label-unfocused-padding = 2
 
 ; Available tokens:
