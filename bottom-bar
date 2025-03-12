@@ -365,6 +365,9 @@ format = <label> <ramp-used>
 ; Available tokens:
 ;   %percentage_used% (default)
 ;   %percentage_free%
+;   %used% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
+;   %free% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
+;   %total% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
 ;   %gb_used%
 ;   %gb_free%
 ;   %gb_total%
@@ -373,14 +376,17 @@ format = <label> <ramp-used>
 ;   %mb_total%
 ;   %percentage_swap_used%
 ;   %percentage_swap_free%
-;   %mb_swap_total%
-;   %mb_swap_free%
-;   %mb_swap_used%
+;   %swap_total% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
+;   %swap_free% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
+;   %swap_used% (Switches between KiB, MiB, and GiB) (New in version 3.6.0)
 ;   %gb_swap_total%
 ;   %gb_swap_free%
 ;   %gb_swap_used%
+;   %mb_swap_total%
+;   %mb_swap_free%
+;   %mb_swap_used%
 
-label = %gb_used%/%gb_total%
+label = %gb_used%/%gb_free%
 
 ; Only applies if <bar-used> is used
 bar-used-indicator =
@@ -407,10 +413,19 @@ ramp-used-0 = 
 ramp-used-0-foreground = ${colors.success}
 
 ramp-used-1 = 
-ramp-used-1-foreground = ${colors.notify}
+ramp-used-1-foreground = ${colors.success}
 
 ramp-used-2 = 
-ramp-used-2-foreground = ${colors.urgent}
+ramp-used-2-foreground = ${colors.success}
+
+ramp-used-3 = 
+ramp-used-3-foreground = ${colors.notify}
+
+ramp-used-4 = 
+ramp-used-4-foreground = ${colors.notify}
+
+ramp-used-5 = 
+ramp-used-5-foreground = ${colors.urgent}
 
 ; Only applies if <ramp-free> is used
 ramp-free-0 = ▁
