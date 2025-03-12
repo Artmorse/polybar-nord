@@ -33,7 +33,7 @@ top-right = network-wifi-detail-ipv4 network-eth-detail-ipv4 kind docker backlig
 # Bottom modules
 bottom-left = powermenu updates weather
 bottom-center = 
-bottom-right = network-wifi-detail-ipv6 network-eth-detail-ipv6 cpu memory filesystem temperature show-desktop
+bottom-right = network-wifi-detail-ipv6 network-eth-detail-ipv6 cpu memory filesystem temperature
 
 
 #
