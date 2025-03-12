@@ -31,7 +31,7 @@ top-center = title
 top-right = network-wifi-detail-ipv4 network-eth-detail-ipv4 kind docker backlight alsa battery date
 
 # Bottom modules
-bottom-left = powermenu updates weather
+bottom-left = powermenu
 bottom-center = 
 bottom-right = network-wifi-detail-ipv6 network-eth-detail-ipv6 cpu memory filesystem temperature
 
