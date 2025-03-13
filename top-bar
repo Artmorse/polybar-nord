@@ -101,9 +101,9 @@ label-mode-underline = ${colors.buffer}
 ;   %output%
 ; Default: %icon% %name%
 label-focused = %icon%
-label-focused-foreground = ${colors.nord6}
+label-focused-foreground = ${colors.nord7}
 ; label-focused-background = #fff
-label-focused-underline = ${colors.nord6}
+label-focused-underline = ${colors.nord7}
 label-focused-padding = 2
 
 ; Available tokens:
@@ -113,7 +113,7 @@ label-focused-padding = 2
 ;   %output%
 ; Default: %icon% %name%
 label-unfocused = %icon%
-label-unfocused-foreground = ${colors.nord7}
+label-unfocused-foreground = ${colors.nord6}
 label-unfocused-padding = 2
 
 ; Available tokens:
