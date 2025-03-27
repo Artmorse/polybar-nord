@@ -1,4 +1,5 @@
 #
-# VSCode
+# IDEs
 #
 .vscode
+.idea
