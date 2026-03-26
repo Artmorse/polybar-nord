@@ -14,12 +14,12 @@ if type "xrandr"; then
     while [[ $# -gt 0 ]]; do
         m=$1
         if [ $is_primary -eq 1 ]; then
-            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config nord-top &
-            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config nord-down &
+            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config nord-top 2>/dev/null &
+            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config nord-down 2>/dev/null &
             echo "The nord-top bar and the nord-down bar has been launched on the $m monitor (primary)."
             is_primary=0
         else
-            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config little-nord-top &
+            MONITOR="$m" polybar -c $HOME/.config/polybar/bars-config little-nord-top 2>/dev/null &
             echo "The little nord-top bar has been launched on the $m monitor."
         fi
         shift
