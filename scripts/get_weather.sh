@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Weather display script for polybar using OpenWeatherMap API
+# Requires: curl, jq
+# Configuration: Set OPENWEATHER_API_KEY and optionally CITY below
 
 get_icon() {
     case $1 in
@@ -24,10 +27,11 @@ get_icon() {
     echo $icon
 }
 
-OPENWEATHER_API_KEY=""
-CITY=""
-UNITS="metric"
-SYMBOL="°"
+# Configuration
+OPENWEATHER_API_KEY=""  # Required: Get your API key from https://openweathermap.org/api
+CITY=""                  # Optional: Leave empty to use geolocation, or set to city name or ID
+UNITS="metric"           # Options: metric, imperial, standard
+SYMBOL="°"               # Temperature symbol
 
 API="https://api.openweathermap.org/data/2.5"
 

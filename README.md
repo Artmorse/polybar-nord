@@ -67,6 +67,10 @@ bash launch.sh DP-1 eDP-1 HDMI-1
 - [launch.sh](launch.sh)
     this script is used to launch the polybars
 
+## Development
+
+For detailed guidelines on working with this configuration, including module structure, conventions, and common tasks, see [CLAUDE.md](CLAUDE.md).
+
 ## Inspiration
 
 - [polybar-nord-theme](https://github.com/Yucklys/polybar-nord-theme)

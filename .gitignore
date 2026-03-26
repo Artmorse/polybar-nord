@@ -3,3 +3,21 @@
 #
 .vscode
 .idea
+
+#
+# User-specific configuration
+#
+# Backup files
+*.bak
+*.backup
+*~
+
+# Log files
+*.log
+
+# Local configuration overrides
+*.local
+
+# OS-specific
+.DS_Store
+Thumbs.db

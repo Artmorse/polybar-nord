@@ -1,4 +1,6 @@
-#!/bin/bash
+#!/usr/bin/env bash
+# Battery notification script for polybar
+# Sends desktop notifications when battery level is low
 
 # Battery threshold (change as needed)
 THRESHOLD=30
