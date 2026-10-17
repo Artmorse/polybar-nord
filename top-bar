@@ -402,7 +402,7 @@ type = custom/script
 exec = docker ps -q | wc -l
 interval = 1
 
-label = %output% 
+label = %output% 
 label-underline = ${colors.nord9}
 label-foreground = ${colors.nord6}
 label-padding = 1
