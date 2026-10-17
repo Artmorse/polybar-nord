@@ -486,6 +486,25 @@ bar-empty = ─
 
 
 
+;
+; [module/xsct]
+; Toggle the yellow screen (night mode) with xsct
+;
+
+[module/xsct]
+type = custom/script
+
+exec = ~/.config/polybar/scripts/xsct-toggle.sh status
+interval = 2
+
+click-left = ~/.config/polybar/scripts/xsct-toggle.sh toggle
+
+; underline color and padding are set by the script
+label = %output%
+label-foreground = ${colors.nord6}
+
+
+
 
 ;
 ; [module/alsa]
