@@ -30,6 +30,7 @@
 - **module/powermenu** | custom/menu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-menu)
 - **module/updates** | custom/updates module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/updates-pacman-aurhelper)
 - **module/weather** | custom/weather module | [wiki](https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-simple)
+- **module/to-rate-count** | custom/script module (LeMorse photos waiting to be rated)
 
 - **module/network-detail-ipv6** | internal/network module | [wiki](https://github.com/polybar/polybar/wiki/Module:-network)
 - **module/cpu** | internal/cpu module | [wiki](https://github.com/polybar/polybar/wiki/Module:-cpu)

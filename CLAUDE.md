@@ -20,6 +20,7 @@ All scripts in `scripts/` should be executable and follow bash conventions:
 - **battery-notifier.sh** - Low battery notifications
 - **count-pacman-and-yay-updates.sh** - System update counter
 - **upgrade-pacman-and-yay-packages.sh** - Package upgrade trigger
+- **count-to-rate-photos.sh** - Counts LeMorse JPGs waiting in `02 - TO_RATE` on the X10 Pro drive (empty output when unmounted)
 
 ## Configuration Patterns
 

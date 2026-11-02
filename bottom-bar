@@ -60,6 +60,25 @@ label-padding = 1
 
 
 ;
+; [module/to-rate-count]
+; Number of LeMorse photos (JPG) waiting in the "02 - TO_RATE" folder
+;
+
+[module/to-rate-count]
+type = custom/script
+
+exec = ~/.config/polybar/scripts/count-to-rate-photos.sh
+interval = 60
+
+label =  %output%
+label-underline = ${colors.nord8}
+label-foreground = ${colors.nord6}
+label-padding = 1
+
+
+
+
+;
 ; [module/weather]
 ; https://github.com/polybar/polybar-scripts/tree/master/polybar-scripts/openweathermap-simple
 ;

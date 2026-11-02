@@ -33,7 +33,7 @@ top-right = network-eth-detail-ipv4 network-wifi-detail-ipv4 kind docker backlig
 # Bottom modules
 bottom-left = powermenu
 bottom-center = 
-bottom-right = network-wifi-detail-ipv6 cpu memory filesystem temperature show-desktop
+bottom-right = to-rate-count network-wifi-detail-ipv6 cpu memory filesystem temperature show-desktop
 
 
 #
